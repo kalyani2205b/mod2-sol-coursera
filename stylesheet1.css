@@ -1,0 +1,23 @@
+h1{
+	margin-bottom: 15px;
+}
+row:after {
+    content: "";
+    display: table;
+    }
+.column{
+
+	border: 1px solid black;
+	padding: 1px;
+	margin-bottom: 15px;
+	margin-left: 1px;
+	background-color: #A52A2A;
+	box-sizing: content-box;
+}
+
+@media(min-width : 992px) {
+	.column{
+		float: left;
+		width:33.33%;
+	}
+}
