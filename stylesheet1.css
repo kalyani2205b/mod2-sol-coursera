@@ -1,23 +1,50 @@
+*{
+	box-sizing: border-box;
+}
 h1{
 	margin-bottom: 15px;
 }
-row:after {
-    content: "";
-    display: table;
-    }
-.column{
+h2{
+	margin:0;
+	padding:0;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: #ed0b29;
+	width:150px;
+	float:right;
+	text-align: center;
+}
+.column1,.column2, .column3{
 
 	border: 1px solid black;
-	padding: 1px;
-	margin-bottom: 15px;
-	margin-left: 1px;
-	background-color: #A52A2A;
-	box-sizing: content-box;
+	/*padding: 1px;*/
+	
+	/* margin-left: 1px; */
+	/*margin: 20px;*/
+	background-color: #a09d9f;
+
+	
+}
+p{
+	clear:right;
 }
 
 @media(min-width : 992px) {
-	.column{
+	.column1, .column2, .column3 {
 		float: left;
-		width:33.33%;
+		width:30%;
+		margin:1.66%
 	}
+}
+@media(min-width: 768px) and (max-width: 991px){
+.column1,.column2{
+	float: left;
+	width:45%;
+	margin:2.5%;
+}
+.column3{
+	clear:left;
+	width:95%;
+	margin:2.5%;
+}
 }
